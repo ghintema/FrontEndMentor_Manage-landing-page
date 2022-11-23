@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <!-- linking to a11y accessible slider -->
+  <link rel="stylesheet" href="//unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
+ 
+  <title>Frontend Mentor | Manage landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="primary-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#"><img src="images/logo.svg" alt="Manage"></a>
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <!-- <img class="icon-hamburger" id="icon-hamburger" src="images/icon-hamburger.svg" alt="" aria-hidden="true"> <!--hamburger icon hidden for screen-readers-->
+          <!-- <img class="icon-close" id="icon-close" src="images/icon-close.svg" alt="" aria-hidden="true"> hamburger icon hidden for screen-readers --> -->
+          <span class="visually-hidden">Menu</span></button> <!--content for screen-reader only-->
+        <nav class="primary-navigation" id="primary-navigation" aria-hidden="true">
+          <ul aria-label="primary" role="list" class="nav-list" > <!-- without liststyle some screenreaders tend to not treat a list a list.-->
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </nav>
+        <button class="button display-sm-none display-md-inline-flex" >Get Started</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero padding-block-900">
+      <div class="container">
+        <div class="even-columns" data-order="inverse">
+          <div class="flow text-centered-sm-only">
+            <h1 class="fs-primary-heading fw-bold">  Bring everyone together to build better products.</h1>
+            <p>Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+            <button class="button">Get Started</button>
+          </div>
+          <div class="hero__image">
+            <img src="images/illustration-intro.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sales-points | padding-block-900">
+      <div class="container">
+        <div class="even-columns">
+          <div class="sales-points__blog |flow text-centered-sm-only margin-bottom-700" style="--flow-spacer:1.5em">
+            <h2 class="fs-secondary-heading fw-bold">What’s different about Manage?</h2>
+            <p>Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams. </p>
+          </div>
+          <div>
+            <ul role="list" class="numbered-items flow" >
+              <li >
+                <div class="flow" style="--flow-spacer:1em">
+                  <h3 class="numbered-items__title | fs-600 fw-bold">Track company-wide progress</h3>
+                  <p class="numbered-items__body" data-width="wide">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+                </div>
+              </li>
+              <li>
+                <div class="flow" style="--flow-spacer:1em">
+                  <h3 class="numbered-items__title | fs-600 fw-bold">Advanced built-in reports</h3>
+                  <p class="numbered-items__body" data-width="wide">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
+                </div>
+              </li>
+              <li>
+                <div class="flow" style="--flow-spacer:1em">
+                  <h3 class="numbered-items__title | fs-600 fw-bold">Everything you need in one place</h3>
+                  <p class="numbered-items__body" data-width="wide">Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="carousel | padding-block-900 text-centered">
+      <h2 class="fs-secondary-heading fw-bold" id="touch">What they’ve said</h2>
+      <!-- carousel here -->
+
+
+      <!-- <ul class="slider">
+        <li>
+          <img src="images/avatar-anisha.png" alt="">
+          <div class="slider-content | flow" style="--flow-spacer:1em">
+            <h3 class="fw-bold">Anisha Li</h3>
+            <p data-width="wide">  “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
+          </div>
+        </li>
+        <li>
+          <img src="images/avatar-ali.png" alt="">
+          <div class="slider-content | flow" style="--flow-spacer:1em">
+            <h3 class="fw-bold">Ali Bravow</h3>
+            <p data-width="wide">We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
+          </div>
+        </li>
+        <li>
+          <img src="images/avatar-richard.png" alt="">
+          <div class="slider-content | flow" style="--flow-spacer:1em">
+            <h3 class="fw-bold">Richard Watts</h3>
+            <p data-width="wide">“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”</p>
+          </div>
+        </li>
+        <li>
+          <img src="images/avatar-shanai.png" alt="">
+          <div class="slider-content | flow" style="--flow-spacer:1em">
+            <h3 class="fw-bold">Shanai Gough</h3>
+            <p data-width="wide">“Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+          </div>
+        </li> 
+        
+      </ul> -->
+
+      <div class="slider-2" id="slider-" aria-label="carousel">
+        <button class="button-next" id="button-next" aria-label="next slide"><img src="images/icon-next.svg" alt=""></button>
+        <button class="button-prev" id="button-prev" aria-label="previous slide"><img src="images/icon-previous.svg" alt=""></button>
+        
+        <ul class="all-slides" id="all-slides" aria-role="listbox">
+          <li class="slide" aria-hidden="true" aria-role="option">
+            <img src="images/avatar-anisha.png" alt="">
+            <div class="slider-content | flow" style="--flow-spacer:1em">
+              <h3 class="fw-bold">Anisha Li</h3>
+              <p data-width="wide">  “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
+            </div>
+          </li>
+          <li class="slide" aria-hidden="true" aria-role="option">
+            <img src="images/avatar-ali.png" alt="">
+            <div class="slider-content | flow" style="--flow-spacer:1em">
+              <h3 class="fw-bold">Ali Bravow</h3>
+              <p data-width="wide">We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
+            </div>
+          </li>
+          <li class="slide" aria-hidden="true" aria-role="option">
+            <img src="images/avatar-richard.png" alt="">
+            <div class="slider-content | flow" style="--flow-spacer:1em">
+              <h3 class="fw-bold">Richard Watts</h3>
+              <p data-width="wide">“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”</p>
+            </div>
+          </li>
+          <li class="slide" aria-hidden="true" aria-role="option">
+            <img src="images/avatar-shanai.png" alt="">
+            <div class="slider-content | flow" style="--flow-spacer:1em">
+              <h3 class="fw-bold">Shanai Gough</h3>
+              <p data-width="wide">“Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="pigeons" id="pigeons" >
+        <button aria-label="to slide 1" class="pigeon" onClick="goTo(1)"></button>
+        <button aria-label="to slide 2" class="pigeon" onClick="goTo(2)"></button>
+        <button aria-label="to slide 3" class="pigeon" onClick="goTo(3)"></button>
+        <button aria-label="to slide 4" class="pigeon" onClick="goTo(4)"></button>
+      </div>
+
+      <button class="button">Get Started</button> 
+    </section>
+
+
+    <section class="cta | margin-top-800 padding-block-900 bg-accent-400 text-neutral-100">
+      <div class="container">
+        <div class="even-columns vertical-align-center">
+          <div>
+            <p class="fs-cta fw-bold">Simplify how your team works today.</p>
+          </div>
+          <div class="justify-self-end-md">
+            <button class="button" data-type="inverted">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="primary-footer padding-block-700 bg-neutral-900 text-neutral-100">
+    <div class="container">
+      <div class="primary-footer__wrapper">
+            
+          <a class="primary-footer__logo" href="#"><img class="footer-logo" src="images/logo-bright.svg" alt="Manage"></a> 
+          <ul class="social-list" role="list" aria-label="social links">        <!--aria-label gives supportive information over the list so the screen-reader user may decide to skip it or not -->
+            <li>
+              <a aria-label="facebook" href="#">
+                <img id="icon-facebook" class="social-icon" src="/images/icon-facebook.svg" alt="">
+              </a>
+            </li> <!--aria-label is important here because icons don't speak-->
+            <li>
+              <a aria-label="youtube" href="#">
+                <img id="icon-youtube" class="social-icon" src="images/icon-youtube.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a aria-label="twitter" href="#">
+                <img id="icon-twitter" class="social-icon" src="images/icon-twitter.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a aria-label="pinterest" href="#">
+                <img id="icon-pinterest" class="social-icon" src="images/icon-pinterest.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a aria-label="instagram" href="#">
+                <img id="icon-instagram" class="social-icon" src="images/icon-instagram.svg" alt="">
+              </a>
+            </li>
+          </ul>
+       
+        <div class="primary-footer__nav">
+          <nav class="footer-nav">
+            <ul aria-label="footer" role="list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- <div class="primary-footer-form"> -->
+          <form class="primary-footer__form" action="">
+            <input id="email-input" type="email">
+            <button class="button" data-shadow="none" >Go</button>
+            <label for="email-input" style="color:white">Please insert a valid email</label>
+          </form>
+          <p class="primary-footer__copyright">Copyright 2020. All Rights Reserved</p>
+        <!-- </div> -->
+      </div>
+    </div>
+  </footer>
+
+ 
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="main.js"></script>
+  
+  <script src="hammer-swipe.js"></script>
+  <script src="slider.js"></script>
+
+
+  <!-- <script src="//unpkg.com/a11y-slider@latest/dist/a11y-slider.js" ></script>
+  
+  <script>
+    const slider = new A11YSlider(document.querySelector('.slider'), {
+      adaptiveHeight: true,
+      dots: true,
+      autoplay: false,
+      infinite: true
+    });
+  </script> -->
+  
+</body>
+</html>
