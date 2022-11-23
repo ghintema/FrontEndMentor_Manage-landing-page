@@ -31,7 +31,7 @@ Users should be able to:
   - The `input` field is empty
   - The email address is not formatted correctly
 
-  This challenge was largely coded according to a video tutorial by Kevin Powel on youtube.com. Thanks to him!! https://www.youtube.com/@KevinPowell
+  This challenge was largely coded according to a video tutorial by Kevin Powel on youtube.com. Thanks to him!! https://www.youtube.com/@KevinPowell I have made a few changes though...
 
 ### Screenshot
 
@@ -47,8 +47,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add Repository URL here](https://www.frontendmentor.io/solutions/manage-landingpage-with-kevin-powel-_f9Ek9Obrv)
+- Repository URL: [Add Repository URL here](https://github.com/ghintema/FrontEndMentor_Manage-landing-page.git)
+- Live Site URL: [Add live site URL here](https://ghintema.github.io/FrontEndMentor_Manage-landing-page/)
 
 ## My process
 
@@ -77,6 +78,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - use of aria-controlls, aria-expanded, aria-hidden
 - manipulating svg-color via css on hover (though i didn't finally do that, i exchanged them on hover)
 - The use of utility-classes is limited. The excessive use of it make things more complicated than usefull.
+- using pseudo-elements for design-elements.
 
 
 

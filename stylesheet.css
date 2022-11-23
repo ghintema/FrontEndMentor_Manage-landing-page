@@ -59,6 +59,8 @@ p[data-width=wide] {
     max-width: 42ch;
 }
 
+p {opacity: 0.8;} /* 0.5 according to design results in very low contrast-ratio. */
+
 /* Button */
 
 .button {

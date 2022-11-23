@@ -9,6 +9,22 @@ const primaryNav = document.querySelector('.primary-navigation');
 //     primaryNav.classList.toggle('opened')
 // })
 
+
+var x = window.matchMedia("(min-width: 47em)")
+
+const initAriaHidden = () => {
+    if (x.matches) { // If media query matches
+        primaryNav.setAttribute('aria-hidden', 'false');
+        console.log('test123')
+      } else {
+        primaryNav.setAttribute('aria-hidden', 'true');
+        console.log('test 456')
+      }
+}
+
+initAriaHidden();
+x.addEventListener('change', initAriaHidden)
+
 console.log(primaryHeader);
 navToggle.addEventListener('click', () => {
 
